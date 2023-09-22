@@ -1,0 +1,203 @@
+Python 3.11.1 (tags/v3.11.1:a7a450f, Dec  6 2022, 19:58:39) [MSC v.1934 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+print("안녕하세요?")
+안녕하세요?
+print("100")
+100
+print("%d"%100)
+100
+print("100+100")
+100+100
+print("%d"%(100+100))
+200
+print("%d"%(100,200))
+Traceback (most recent call last):
+  File "<pyshell#5>", line 1, in <module>
+    print("%d"%(100,200))
+TypeError: not all arguments converted during string formatting
+print("%d %d"%(100))
+Traceback (most recent call last):
+  File "<pyshell#6>", line 1, in <module>
+    print("%d %d"%(100))
+TypeError: not enough arguments for format string
+print("%d %d"%100)
+Traceback (most recent call last):
+  File "<pyshell#7>", line 1, in <module>
+    print("%d %d"%100)
+TypeError: not enough arguments for format string
+print("%d / %d = %d"%(100,200,0.5))
+100 / 200 = 0
+print("%d / %d = %d"%(100,200,100/200))
+100 / 200 = 0
+print("%d / %d = %f"%(100,200,100/200))
+100 / 200 = 0.500000
+print("{2:d} {1:d} {0:d}".format(100,200,300))
+300 200 100
+print("{0:d} {1:5d} {2:05d}".format(123,123,123))
+123   123 00123
+sel=3
+if sel == 3:
+    print("3")
+    print("또!")
+if sel ==4:
+    
+SyntaxError: invalid syntax
+
+= RESTART: C:/Users/82103/Desktop/오픈소스 프로그래밍_최아원/Code03-04.py
+입력진수 결정(16/10/8/2)16
+값 입력 : FF
+16진수 ==>  0xff
+10진수 ==>  255
+ 8진수 ==>  0o377
+ 2진수 ==>  0b11111111
+a=123
+type(a)
+<class 'int'>
+a=100**100
+a
+100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+a,b=9,2
+print(a**b,a%b,a//b)
+81 1 4
+a="""파이썬
+만세"""
+a
+'파이썬\n만세'
+print(a)
+파이썬
+만세
+print("%d"%123)
+123
+print("%5d"%123)
+  123
+print("%05d"%123)
+00123
+print("%f"%123.45)
+123.450000
+print("%7.1f"%123.45)
+  123.5
+print("%7.3f"%123.45)
+123.450
+print("%s"%"Python")
+Python
+print("%10s"%"Python")
+    Python
+print("%d %5d %05d"%(123,123,123))
+123   123 00123
+print("{0:d}{1:5d}{2:05d}".format(123,123,123))
+123  12300123
+print("{2:d} {1:d}{0:d}".format(100,200,300))
+300 200100
+print("\n줄바꿈\n연습")
+
+줄바꿈
+연습
+a,b,c=2,3,4
+print(a+b-c,a+b*c,a*b/c)
+1 14 1.5
+s1,s2,s3="100","100.123","999999999999999"
+print(int(s1)+1,float(s2)+1,int(s3)+1)
+101 101.123 1000000000000000
+a=100;b=100.123
+str(a)+'1';str(b)+'1'
+'1001'
+'100.1231'
+int("100")
+100
+int("백")
+Traceback (most recent call last):
+  File "<pyshell#50>", line 1, in <module>
+    int("백")
+ValueError: invalid literal for int() with base 10: '백'
+
+= RESTART: C:/Users/82103/Desktop/오픈소스 프로그래밍_최아원/Code04-01.py
+교환할 돈은 얼마?50000
+
+500짜리 == > 100개
+
+100짜리 == > 0개
+
+50짜리 == > 0개
+
+10짜리 == > 0개
+바꾸지 못한 잔돈 ==> 0 
+
+
+= RESTART: C:/Users/82103/Desktop/오픈소스 프로그래밍_최아원/Code04-01.py
+교환할 돈은 얼마?123054
+
+500짜리 == > 246개
+
+100짜리 == > 0개
+
+50짜리 == > 1개
+
+10짜리 == > 0개
+바꾸지 못한 잔돈 ==> 4 
+
+
+= RESTART: C:/Users/82103/Desktop/오픈소스 프로그래밍_최아원/Code04-01.py
+교환할 돈은 얼마?12345647
+
+500짜리 == > 24691개
+
+100짜리 == > 1개
+
+50짜리 == > 0개
+
+10짜리 == > 4개
+바꾸지 못한 잔돈 ==> 7 
+
+a,b,c=1,2,3
+print(a+b-c,a+b*c,a*b/c)
+0 7 0.6666666666666666
+a=100;b100.123
+SyntaxError: incomplete input
+a=100;b=100.123
+str(a)+'1';str(b)+'1'
+'1001'
+'100.1231'
+a=99
+(a>100)and(a<200)
+False
+(a>100)or(a<200)
+True
+not(a==100)
+True
+if(1234):print("참이면 보여요")
+if(0):print("거짓이면 안 보여요")
+SyntaxError: invalid syntax
+if(0):print("거짓이면 안 보여요")
+
+10&7
+2
+123&456
+72
+>>> 0xFFFF & 0x0000
+0
+>>> 10|7
+15
+>>> 123|456
+507
+>>> 0xFFFF|0x0000
+65535
+>>> 10^7
+13
+>>> 123^456
+435
+>>> 0xFFFF^0x0000
+65535
+>>> a=123456
+>>> ~a + 1
+-123456
+>>> a=10
+>>> a<<1;a<<3;a<4
+20
+80
+False
+>>> a=10
+>>> a>>1;a>>1;a>>3;a>>4
+5
+5
+1
+0
