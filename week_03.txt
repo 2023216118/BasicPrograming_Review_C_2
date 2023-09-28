@@ -1,0 +1,240 @@
+Python 3.11.1 (tags/v3.11.1:a7a450f, Dec  6 2022, 19:58:39) [MSC v.1934 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+
+= RESTART: C:/Users/82103/Desktop/오픈소스 프로그래밍_최아원/Code07-02.py
+1번쩨 숫자 : 1
+2번쩨 숫자 : 6
+3번쩨 숫자 : 5
+4번쩨 숫자 : 5
+합계 ==> 17
+aa=[]
+aa.append(0)
+aa.append(0)
+aa.append(0)
+
+aa.append(0)
+
+print(aa)
+[0, 0, 0, 0]
+aa=[]
+for i in range(0,100):
+    aa.append(0)
+len(aa)
+SyntaxError: invalid syntax
+for i in range(0,100):
+    aa.append(0)
+
+    
+len(aa)
+100
+
+= RESTART: C:/Users/82103/Desktop/오픈소스 프로그래밍_최아원/Code07-03.py
+1번째 숫자 : 4
+2번째 숫자 : 6
+3번째 숫자 : 8
+4번째 숫자 : 7
+5번째 숫자 : 2
+6번째 숫자 : 2
+7번째 숫자 : 5
+8번째 숫자 : 2
+9번째 숫자 : 5
+10번째 숫자 : 6
+Traceback (most recent call last):
+  File "C:/Users/82103/Desktop/오픈소스 프로그래밍_최아원/Code07-03.py", line 13, in <module>
+    while(i<10):
+KeyboardInterrupt
+
+= RESTART: C:/Users/82103/Desktop/오픈소스 프로그래밍_최아원/Code07-03.py
+1번째 숫자 : 1
+2번째 숫자 : 23
+3번째 숫자 : 5
+4번째 숫자 : 6
+5번째 숫자 : 8
+6번째 숫자 : 
+Traceback (most recent call last):
+  File "C:/Users/82103/Desktop/오픈소스 프로그래밍_최아원/Code07-03.py", line 11, in <module>
+    aa[i] = int(input(str(i+1)+"번째 숫자 : "))
+ValueError: invalid literal for int() with base 10: ''
+2
+
+
+= RESTART: C:/Users/82103/Desktop/오픈소스 프로그래밍_최아원/Code07-03.py
+1번째 숫자 : 1
+2번째 숫자 : 2
+3번째 숫자 : 
+Traceback (most recent call last):
+  File "C:/Users/82103/Desktop/오픈소스 프로그래밍_최아원/Code07-03.py", line 11, in <module>
+    aa[i] = int(input(str(i+1)+"번째 숫자 : "))
+2ValueError: invalid literal for int() with base 10: ''
+
+= RESTART: C:/Users/82103/Desktop/오픈소스 프로그래밍_최아원/Code07-03.py
+1번째 숫자 : 1
+2번째 숫자 : 2
+3번째 숫자 : 3
+4번째 숫자 : 5
+5번째 숫자 : 5
+6번째 숫자 : 5
+7번째 숫자 : 5
+8번째 숫자 : 5
+9번째 숫자 : 5
+10번째 숫자 : 5
+합계 ==> 41
+
+= RESTART: C:/Users/82103/Desktop/오픈소스 프로그래밍_최아원/self_study_7-1.py
+1번째 숫자 : 1
+2번째 숫자 : 1
+3번째 숫자 : 2
+4번째 숫자 : 2
+5번째 숫자 : 2
+6번째 숫자 : 2
+7번째 숫자 : 2
+8번째 숫자 : 2
+9번째 숫자 : 2
+10번째 숫자 : 2
+합계 ==> 18
+aa=[]
+aa=[1,2,3,4,5,6]
+print(aa)
+[1, 2, 3, 4, 5, 6]
+aa.sort()
+aa
+[1, 2, 3, 4, 5, 6]
+aa.reverse()
+aa
+[6, 5, 4, 3, 2, 1]
+aa=[]
+bb=[]
+value=0
+for i in range(0,100):
+    aa.append(value)
+    value +=2
+
+    
+for i in range(0,100):
+    bb.append(aa[99-i])
+
+    
+print("bb[0]애는 %d이, bb[99]에는 %d이 입력됩니다."%(bb[0],bb[99]))
+bb[0]애는 198이, bb[99]에는 0이 입력됩니다.
+aa=[10,20,30,40]
+aa[0:3]
+[10, 20, 30]
+aa[2:4]
+[30, 40]
+aa=[10,20,30]
+bb=[40,50,60]
+aa+bb
+[10, 20, 30, 40, 50, 60]
+aa*3
+[10, 20, 30, 10, 20, 30, 10, 20, 30]
+aa=[10,20,30,40,50,60,70]
+aa=[10,20,30]
+bb=[40,50,60]
+aa=[10,20,30,40,50,60,70]
+aa[::2]
+[10, 30, 50, 70]
+aa[::-2]
+[70, 50, 30, 10]
+aa[::-1]
+[70, 60, 50, 40, 30, 20, 10]
+aa=[10,20,30]
+aa[1:2]=[200,201]
+aa
+[10, 200, 201, 30]
+aa=[10,20,30]
+del(aa[1])
+aa
+[10, 30]
+aa=[10,20,30,40,50]
+aa[1:4]=[]
+aa
+[10, 50]
+myList=[30,10,20]
+print("원래 리스티 : %s"%myList)
+원래 리스티 : [30, 10, 20]
+
+myList.append(40)
+print("append(40)후의 리스트 : %s"%myList)
+append(40)후의 리스트 : [30, 10, 20, 40]
+print("pop()으로 추출한 값 : %s"%myList.pop())
+pop()으로 추출한 값 : 40
+print("pop()후의 리스트:%s"%myList)
+pop()후의 리스트:[30, 10, 20]
+myList.reverse()
+print("reverse() 후의 리스트 : %s"%myList)
+reverse() 후의 리스트 : [20, 10, 30]
+print("20값의 위치 : %d"%myList.index(20))
+20값의 위치 : 0
+myList.insert(2,222)
+print("insert(2,222)후에 리스트 : %s"%myList)
+insert(2,222)후에 리스트 : [20, 10, 222, 30]
+myList.remove(222)
+print("remove(222)후의 리스트 : %s"%myList)
+remove(222)후의 리스트 : [20, 10, 30]
+myList.extend([77,88,77])
+print("extend([77,88,77])후의 리스트 : %s"%myList)
+extend([77,88,77])후의 리스트 : [20, 10, 30, 77, 88, 77]
+
+= RESTART: C:/Users/82103/Desktop/오픈소스 프로그래밍_최아원/Code07-05.py
+원래 리스트 : [30, 10, 20]
+append(40)후의 리스트 : [30, 10, 20, 40]
+pop()으로 추출한 값 : 40
+pop()후의 리스트:[30, 10, 20]
+reverse() 후의 리스트 : [20, 10, 30]
+20값의 위치 : 0
+insert(2,222)후에 리스트 : [20, 10, 222, 30]
+remove(222)후의 리스트 : [20, 10, 30]
+extend([77,88,77])후의 리스트 : [20, 10, 30, 77, 88, 77]
+
+= RESTART: C:/Users/82103/Desktop/오픈소스 프로그래밍_최아원/Code07-06.py
+Traceback (most recent call last):
+  File "C:/Users/82103/Desktop/오픈소스 프로그래밍_최아원/Code07-06.py", line 14, in <module>
+    print("%3d"%list[i][k],end=" ")
+TypeError: list[0] is not a generic class
+
+= RESTART: C:/Users/82103/Desktop/오픈소스 프로그래밍_최아원/Code07-06.py
+  1   2   3   4 
+  5   6   7   8 
+  9  10  11  12 
+
+= RESTART: C:/Users/82103/Desktop/오픈소스 프로그래밍_최아원/turtle_game.py
+*******거북이 게임을 시작합니다.*******
+거북이 선수를 선택하세요 : 
+거북이 1번 : 1qjs
+거북이 2번 : 2qjs
+거북이 3번 : 3qjs
+거북이 4번 : 4qjs
+Traceback (most recent call last):
+  File "C:/Users/82103/Desktop/오픈소스 프로그래밍_최아원/turtle_game.py", line 14, in <module>
+    k.speed(10)
+NameError: name 'k' is not defined
+
+= RESTART: C:/Users/82103/Desktop/오픈소스 프로그래밍_최아원/turtle_game.py
+*******거북이 게임을 시작합니다.*******
+거북이 선수를 선택하세요 : 
+거북이 1번 : 1
+거북이 2번 : 2
+거북이 3번 : 3
+거북이 4번 : 4
+Traceback (most recent call last):
+  File "C:/Users/82103/Desktop/오픈소스 프로그래밍_최아원/turtle_game.py", line 83, in <module>
+    t.wirte(name[0])
+AttributeError: module 'turtle' has no attribute 'wirte'. Did you mean: 'width'?
+>>> 
+= RESTART: C:/Users/82103/Desktop/오픈소스 프로그래밍_최아원/turtle_game.py
+*******거북이 게임을 시작합니다.*******
+거북이 선수를 선택하세요 : 
+거북이 1번 : 1
+거북이 2번 : 2
+거북이 3번 : 3
+거북이 4번 : 4
+3님, 1등입니다! 축하합니다!
+>>> 
+= RESTART: C:/Users/82103/Desktop/오픈소스 프로그래밍_최아원/turtle_game2.py
+*******거북이 게임을 시작합니다.*******
+거북이 선수를 선택하세요 : 
+거북이 0번 : 1
+거북이 1번 : 2
+거북이 2번 : 3
+거북이 3번 : 4
+1님, 1등입니다! 축하합니다!
