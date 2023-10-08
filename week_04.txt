@@ -1,0 +1,149 @@
+Python 3.11.1 (tags/v3.11.1:a7a450f, Dec  6 2022, 19:58:39) [MSC v.1934 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+tt1=(10,20,30); tt1
+(10, 20, 30)
+tt2=10,20,30;tt2
+(10, 20, 30)
+tt1.append(40)
+Traceback (most recent call last):
+  File "<pyshell#2>", line 1, in <module>
+    tt1.append(40)
+AttributeError: 'tuple' object has no attribute 'append'
+tt1[0]=40
+Traceback (most recent call last):
+  File "<pyshell#3>", line 1, in <module>
+    tt1[0]=40
+TypeError: 'tuple' object does not support item assignment
+del(tt1[0])
+Traceback (most recent call last):
+  File "<pyshell#4>", line 1, in <module>
+    del(tt1[0])
+TypeError: 'tuple' object doesn't support item deletion
+tt1=(10,20,30,40)
+tt1[0]
+10
+tt1[0]+tt1[1]+tt1[2]
+60
+tt2=('A',)
+tt2=('',)
+tt2=('A','B')
+tt1+tt2
+(10, 20, 30, 40, 'A', 'B')
+tt2*3
+('A', 'B', 'A', 'B', 'A', 'B')
+myTuple=(10,20,30)
+myList=List(myTuple)
+Traceback (most recent call last):
+  File "<pyshell#14>", line 1, in <module>
+    myList=List(myTuple)
+NameError: name 'List' is not defined. Did you mean: 'list'?
+myList=list(myTuple)
+myList.append(40)
+myTuple=tuple(myList)
+myTuple
+(10, 20, 30, 40)
+dic1={1:'a',2:'b',3:'c'}
+dic1
+{1: 'a', 2: 'b', 3: 'c'}
+student1{'학번':1000,'이름':'홍길동','학과':'컴퓨터학과'}
+SyntaxError: invalid syntax
+student1={'학번':1000,'이름':'홍길동','학과':'컴퓨터학과'}
+student1
+{'학번': 1000, '이름': '홍길동', '학과': '컴퓨터학과'}
+student1['연락처']='010-1111-2222'
+student1
+{'학번': 1000, '이름': '홍길동', '학과': '컴퓨터학과', '연락처': '010-1111-2222'}
+student1['학과']='파이썬학과'
+student1
+{'학번': 1000, '이름': '홍길동', '학과': '파이썬학과', '연락처': '010-1111-2222'}
+del(student['학과'])
+Traceback (most recent call last):
+  File "<pyshell#28>", line 1, in <module>
+    del(student['학과'])
+NameError: name 'student' is not defined. Did you mean: 'student1'?
+del(student1['학과'])
+stuendt1
+Traceback (most recent call last):
+  File "<pyshell#30>", line 1, in <module>
+    stuendt1
+NameError: name 'stuendt1' is not defined. Did you mean: 'student1'?
+student1
+{'학번': 1000, '이름': '홍길동', '연락처': '010-1111-2222'}
+student1={'학번':1000,'이름':'홍길동','학과':'파이썬학과','학번':2000}
+student['학번']
+Traceback (most recent call last):
+  File "<pyshell#33>", line 1, in <module>
+    student['학번']
+NameError: name 'student' is not defined. Did you mean: 'student1'?
+student1['학번']
+2000
+student['이름']
+Traceback (most recent call last):
+  File "<pyshell#35>", line 1, in <module>
+    student['이름']
+NameError: name 'student' is not defined. Did you mean: 'student1'?
+student1['이름']
+'홍길동'
+student1['학과']
+'파이썬학과'
+student1.items()
+dict_items([('학번', 2000), ('이름', '홍길동'), ('학과', '파이썬학과')])
+
+= RESTART: C:/Users/82103/Desktop/오픈소스 프로그래밍_최아원/Code07-08.py
+Traceback (most recent call last):
+  File "C:/Users/82103/Desktop/오픈소스 프로그래밍_최아원/Code07-08.py", line 8, in <module>
+    for k in singer.key():
+AttributeError: 'dict' object has no attribute 'key'. Did you mean: 'keys'?
+
+= RESTART: C:/Users/82103/Desktop/오픈소스 프로그래밍_최아원/Code07-08.py
+이름-->트와이스
+구성원 수-->9
+데뷔-->서바이벌 식스틴
+대표곡-->SIGNAL
+
+= RESTART: C:/Users/82103/Desktop/오픈소스 프로그래밍_최아원/Code07-09.py
+[('Edward', '에드워드'), ('Gpthen', '고든'), ('Henry', '헨리'), ('James', '제임스'), ('Thomas', '토마스')]
+
+= RESTART: C:/Users/82103/Desktop/오픈소스 프로그래밍_최아원/Code07-10.py
+['떡볶이', '짜장면', '라면', '피자', '맥주', '치킨', '삼겹살']중 좋아하는 음식은?떡볶이
+<떡볶이>궁합음식은 <오뎅>입니다.
+['떡볶이', '짜장면', '라면', '피자', '맥주', '치킨', '삼겹살']중 좋아하는 음식은?끝
+mySet1{1,2,3,4,5}
+SyntaxError: invalid syntax
+mySet1={1,2,3,4,5}
+mySet2={4,5,6,7}
+mySet1&mySet2
+{4, 5}
+mySet1|mySet2
+{1, 2, 3, 4, 5, 6, 7}
+mySet1-mySet2
+{1, 2, 3}
+mySet1^mySet2
+{1, 2, 3, 6, 7}
+numList=[num*num for num in range(1,6)]
+numList
+[1, 4, 9, 16, 25]
+>>> numList=[num for num in range(1,21)if num%3==0]
+>>> numList
+[3, 6, 9, 12, 15, 18]
+>>> food=['떡볶이','짜장면','라면','피자','맥주','치킨','삼겹살']
+>>> sides=['오뎅','단무지','김치']
+>>> for food, side in zip(foods,sides):
+...     print(food,'-->',side)
+... 
+...     
+떡볶이 --> 오뎅
+짜장면 --> 단무지
+라면 --> 김치
+>>> tupList=list(zip(food,sides))
+>>> dic=dict(zip(food,sides))
+>>> tupList
+[('라', '오뎅'), ('면', '단무지')]
+>>> dic
+{'라': '오뎅', '면': '단무지'}
+>>> tupList=list(zip(foods,sides))
+>>> dic=dict(zip(foods,sides))
+>>> tupList
+[('떡볶이', '오뎅'), ('짜장면', '단무지'), ('라면', '김치')]
+>>> dic
+{'떡볶이': '오뎅', '짜장면': '단무지', '라면': '김치'}
