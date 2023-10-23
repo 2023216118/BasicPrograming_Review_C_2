@@ -1,0 +1,136 @@
+Python 3.11.1 (tags/v3.11.1:a7a450f, Dec  6 2022, 19:58:39) [MSC v.1934 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+
+= RESTART: C:/Users/82103/Desktop/오픈소스 프로그래밍_최아원/Code09-07.py
+fun1()에서 a값 10
+fun2()에서 a값 10
+
+= RESTART: C:/Users/82103/Desktop/오픈소스 프로그래밍_최아원/Code09-07.py
+fun1()에서 a값 HI
+fun2()에서 a값 HI
+
+= RESTART: C:/Users/82103/Desktop/오픈소스 프로그래밍_최아원/Code09-07.py
+메인 시작에서 a값 20
+fun1()에서 a값 HI
+fun2()에서 a값 HI
+메인 끝에서 a값 HI
+
+= RESTART: C:/Users/82103/Desktop/오픈소스 프로그래밍_최아원/Code09-07.py
+메인 시작에서 a값 20
+fun1()에서 a값 HI
+fun2()에서 a값 HI
+메인 끝에서 a값 HI
+
+= RESTART: C:/Users/82103/Desktop/practice2.py
+첫 번째 수를 입력하세요 : 5
+계산을 입력하세요(+,-,*,/,** : )+
+두 번째 수를 입력하세요 : 3
+## 계산기 : 5 + 3 = 8
+
+= RESTART: C:/Users/82103/Desktop/오픈소스 프로그래밍_최아원/Code09-09.py
+Traceback (most recent call last):
+  File "C:/Users/82103/Desktop/오픈소스 프로그래밍_최아원/Code09-09.py", line 12, in <module>
+    myList=multi(100,200)
+  File "C:/Users/82103/Desktop/오픈소스 프로그래밍_최아원/Code09-09.py", line 2, in multi
+    retList-[]
+NameError: name 'retList' is not defined
+
+= RESTART: C:/Users/82103/Desktop/오픈소스 프로그래밍_최아원/Code09-09.py
+Traceback (most recent call last):
+  File "C:/Users/82103/Desktop/오픈소스 프로그래밍_최아원/Code09-09.py", line 12, in <module>
+    myList=multi(100,200)
+  File "C:/Users/82103/Desktop/오픈소스 프로그래밍_최아원/Code09-09.py", line 5, in multi
+    retList.appen(res1)
+AttributeError: 'list' object has no attribute 'appen'. Did you mean: 'append'?
+
+= RESTART: C:/Users/82103/Desktop/오픈소스 프로그래밍_최아원/Code09-09.py
+multi()에서 돌려준 값 ==> 300 -100
+
+= RESTART: C:/Users/82103/Desktop/오픈소스 프로그래밍_최아원/Code09-09.py
+multi()에서 돌려준 값 ==> 300, -100
+
+== RESTART: C:/Users/82103/Desktop/practice2.py ==
+첫 번째 수를 입력하세요 : 34
+계산을 입력하세요(+,-,*,/,** : )+
+두 번째 수를 입력하세요 : 5
+## 계산기 : 34 + 5 = 39
+
+= RESTART: C:/Users/82103/Desktop/practice2.py
+첫 번째 수를 입력하세요 : 34
+계산을 입력하세요(+,-,*,/,** : )+
+두 번째 수를 입력하세요 : 5
+## 계산기 : 34 + 5 = 39
+계속하려면 Y를 눌러주세요 : 
+
+= RESTART: C:/Users/82103/Desktop/practice2.py
+첫 번째 수를 입력하세요 : 34
+계산을 입력하세요(+,-,*,/,** : )+
+두 번째 수를 입력하세요 : 5
+## 계산기 : 34 + 5 = 39
+계속하려면 Y를 눌러주세요 : 
+Noney
+첫 번째 수를 입력하세요 : 
+= RESTART: C:/Users/82103/Desktop/practice2.py
+첫 번째 수를 입력하세요 : 34
+계산을 입력하세요(+,-,*,/,** : )+
+두 번째 수를 입력하세요 : 5
+## 계산기 : 34 + 5 = 39
+계속하려면 Y를 눌러주세요 : y
+첫 번째 수를 입력하세요 : 5
+계산을 입력하세요(+,-,*,/,** : )-
+두 번째 수를 입력하세요 : 5
+## 계산기 : 5 - 5 = 0
+계속하려면 Y를 눌러주세요 : 
+Traceback (most recent call last):
+  File "C:/Users/82103/Desktop/practice2.py", line 36, in <module>
+    num=input(str("계속하려면 Y를 눌러주세요 : "))
+KeyboardInterrupt
+
+= RESTART: C:/Users/82103/Desktop/practice2.py
+첫 번째 수를 입력하세요 : 34
+계산을 입력하세요(+,-,*,/,** : )+
+두 번째 수를 입력하세요 : 5
+## 계산기 : 34 + 5 = 39
+계속하려면 Y를 눌러주세요 : ㅛ
+프로그램을 종료합니다.
+
+= RESTART: C:/Users/82103/Desktop/practice2.py
+첫 번째 수를 입력하세요 : 34
+계산을 입력하세요(+,-,*,/,** : )+
+두 번째 수를 입력하세요 : 6
+## 계산기 : 34 + 6 = 40
+계속하려면 Y를 눌러주세요 : y
+첫 번째 수를 입력하세요 : 2
+계산을 입력하세요(+,-,*,/,** : )+
+두 번째 수를 입력하세요 : 7
+## 계산기 : 2 + 7 = 9
+계속하려면 Y를 눌러주세요 : 
+프로그램을 종료합니다.
+
+= RESTART: C:/Users/82103/Desktop/오픈소스 프로그래밍_최아원/Code09-11.py
+매개변수가 2개인 함수를 호출한 결과 ==> 30
+매개변수가 3개인 함수를 호출한 결과 ==> 60
+
+= RESTART: C:/Users/82103/Desktop/오픈소스 프로그래밍_최아원/Code09-12-2.py
+매개변수가 2개인 함수를 호출한 결과 ==> 30
+매개변수가 10개인 함수를 호출한 결과 ==> 550
+>>> ef dic_func(**para):
+...     for k in para.keys():
+...         print("%s --> %d명입니다."%(k,para[k]))
+...         
+SyntaxError: invalid syntax
+>>> def dic_func(**para):
+...     for k in para.keys():
+...         print("%s --> %d명입니다."%(k,para[k]))
+... 
+>>> dic_func(트와이스=9,소녀시대=7,걸스데이=4,블랙핑크=4,방탄소년단=7)
+트와이스 --> 9명입니다.
+소녀시대 --> 7명입니다.
+걸스데이 --> 4명입니다.
+블랙핑크 --> 4명입니다.
+방탄소년단 --> 7명입니다.
+>>> 
+= RESTART: C:/Users/82103/Desktop/오픈소스 프로그래밍_최아원/Code09-13.py
+**로또 추첨을 시작합니다 **
+
+추첨된 로또 번호 ==> 12 19 21 22 39 41 
