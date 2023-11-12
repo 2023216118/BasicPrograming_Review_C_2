@@ -1,0 +1,164 @@
+Python 3.11.1 (tags/v3.11.1:a7a450f, Dec  6 2022, 19:58:39) [MSC v.1934 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+
+=========== RESTART: C:/Users/82103/Desktop/오픈소스 프로그래밍_최아원/Module1.py ==========
+Module1.func1()
+Traceback (most recent call last):
+  File "<pyshell#0>", line 1, in <module>
+    Module1.func1()
+NameError: name 'Module1' is not defined
+
+= RESTART: C:/Users/82103/Desktop/오픈소스 프로그래밍_최아원/Module1.py
+Module1.func1()
+Traceback (most recent call last):
+  File "<pyshell#1>", line 1, in <module>
+    Module1.func1()
+NameError: name 'Module1' is not defined
+import Module1
+Module1.func1()
+Module1.py의 func1()이 호출됨
+
+= RESTART: C:/Users/82103/Desktop/오픈소스 프로그래밍_최아원/A.py
+Module1.py의 func1()이 호출됨
+Module1.py의 func2()이 호출됨
+Module1.py의 func3()이 호출됨
+
+= RESTART: C:/Users/82103/Desktop/오픈소스 프로그래밍_최아원/B.py
+Module1.py의 func1()이 호출됨
+Module1.py의 func2()이 호출됨
+Module1.py의 func3()이 호출됨
+
+= RESTART: C:/Users/82103/Desktop/오픈소스 프로그래밍_최아원/Code09-14.py
+Traceback (most recent call last):
+  File "C:/Users/82103/Desktop/오픈소스 프로그래밍_최아원/Code09-14.py", line 12, in <module>
+    turtle.setup(width=swidth+50,height=sheight+50)
+NameError: name 'swidth' is not defined. Did you mean: 'swith'?
+
+= RESTART: C:/Users/82103/Desktop/오픈소스 프로그래밍_최아원/Code09-14.py
+Traceback (most recent call last):
+  File "C:/Users/82103/Desktop/오픈소스 프로그래밍_최아원/Code09-14.py", line 17, in <module>
+    inStr=getString()
+  File "C:\Users/82103/Desktop/오픈소스 프로그래밍_최아원\myTrutle.py", line 7, in getString
+    return(r,g,b)
+NameError: name 'r' is not defined
+
+= RESTART: C:/Users/82103/Desktop/오픈소스 프로그래밍_최아원/Code09-14.py
+Traceback (most recent call last):
+  File "C:/Users/82103/Desktop/오픈소스 프로그래밍_최아원/Code09-14.py", line 21, in <module>
+    tX,tY,tAngle,txtSize=getXYAS(swidth,sheight)
+  File "C:\Users/82103/Desktop/오픈소스 프로그래밍_최아원\myTrutle.py", line 22, in getXYAS
+    return [x,t,angle,size]
+NameError: name 't' is not defined
+
+= RESTART: C:/Users/82103/Desktop/오픈소스 프로그래밍_최아원/Code09-14.py
+Traceback (most recent call last):
+  File "C:/Users/82103/Desktop/오픈소스 프로그래밍_최아원/Code09-14.py", line 22, in <module>
+    r,g,b=getRGB()
+NameError: name 'getRGB' is not defined. Did you mean: 'getTGB'?
+
+= RESTART: C:/Users/82103/Desktop/오픈소스 프로그래밍_최아원/Code09-14.py
+def hap(num1,num2):
+    res=num1+num2
+    return res
+print(hap(10,20))
+SyntaxError: invalid syntax
+print(hap(10,20))
+Traceback (most recent call last):
+  File "<pyshell#8>", line 1, in <module>
+    print(hap(10,20))
+NameError: name 'hap' is not defined. Did you mean: 'map'?
+def hap(num1,num2):
+    res=num1+num2
+    return res
+
+hap(10,20)
+30
+hap2=lambda num, num2: num1+num2
+print(hap2(10,20))
+Traceback (most recent call last):
+  File "<pyshell#13>", line 1, in <module>
+    print(hap2(10,20))
+  File "<pyshell#12>", line 1, in <lambda>
+    hap2=lambda num, num2: num1+num2
+NameError: name 'num1' is not defined. Did you mean: 'num'?
+hap2(10,20)
+Traceback (most recent call last):
+  File "<pyshell#14>", line 1, in <module>
+    hap2(10,20)
+  File "<pyshell#12>", line 1, in <lambda>
+    hap2=lambda num, num2: num1+num2
+NameError: name 'num1' is not defined. Did you mean: 'num'?
+hap2=lambda num1, num2: num1+num2
+hap2(10,20)
+30
+hap3= lambda num1=10,num2=20:num1+num2
+hap3()
+30
+hap3(100,200)
+300
+myList=[1,2,3,4,5]
+def add10(num):
+    return num+10
+
+for i in range(len(myList)):
+    myList[i]=add10(myList[i])
+
+    
+print(myList)
+[11, 12, 13, 14, 15]
+myList=[1,2,3,4,5]
+add10=lambda num:num+10
+myList=list(map(add10,myList))
+myList
+[11, 12, 13, 14, 15]
+myList=[1,2,3,4,5]
+myList=list(map(lambda num:num+10,myList))
+myList
+[11, 12, 13, 14, 15]
+myList=[1,2,3,4,5]
+list2=[10,20,30,40,50]
+ja[:ost=list(map(lambda n1,n2:n1+n2,myList1,list2))
+   
+SyntaxError: invalid syntax
+hapList=list(map(lambda n1,n2:n1+n2,myList1,list2))
+   
+Traceback (most recent call last):
+  File "<pyshell#38>", line 1, in <module>
+    hapList=list(map(lambda n1,n2:n1+n2,myList1,list2))
+NameError: name 'myList1' is not defined. Did you mean: 'myList'?
+hapList=list(map(lambda n1,n2:n1+n2,myList,list2))
+   
+hapList
+   
+[11, 22, 33, 44, 55]
+def count(num):
+    if num>=1:
+        print(num,end=' ')
+...         count(num-1)
+...     else:
+...         return
+... count(10)
+SyntaxError: invalid syntax
+>>> def count(num):
+...     if num>=1:
+...         print(num,end=' ')
+...         count(num-1)
+...     else:
+...         return
+... 
+...     
+>>> count(10)
+10 9 8 7 6 5 4 3 2 1 
+>>> count(20)
+20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 
+>>> def factorial(num):
+...     if num<= 1:
+...         return num
+...     else:
+...         return num*factorial(num-1)
+... 
+...     
+>>> print(factorial(4))
+24
+>>> print(factorial(10))
+3628800
