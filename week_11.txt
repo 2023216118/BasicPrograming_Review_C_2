@@ -1,41 +1,26 @@
-import os
+import sqlite3
 
 #변수 선언 부분
-inFp,outFp=None,None
-inStr,outStr="",""
-i=0
-secu=0
-
-path=os.getcwd()#현재 작업 폴더의 경로 저장
-path+='\\'#작업 폴더 이름 뒤에 '\\'를 추가하여 저장
+con,cur=None,None
+data1,data2,data3,data4="","","",""
+row=""
 
 #메인 코드 부분
-secuYN= input("1.암호화 2. 암호 해석 중 선택 : ")
-inFname=input("입력 파일명을 입력하세요 : ")
-outFname=input("출력 파일명을 입력하세요 : ")
+con=sqlite3.connect("C:/Users/82103/Desktop/대학교/1-2/오픈소스/MY_PYTHON_VS_1205/myDB") 
+cur=con.cursor()
+cur.execute("SELECT*FROM productTable")
 
-if secuYN=="1":
-    secu=100
-elif secuYN=="2":
-    secu=-100
 
-inFp=open(path+inFname,'r',encoding="utf-8")
-outFp=open(path+outFname,'w',encoding="utf-8")
+print("제품코드    제품명     가격     재고수량")
+print("---------------------------------------")
+while(True):
+    row=cur.fetchone()
+    if row==None:
+        break;
+    data1=row[0]
+    data2=row[1]
+    data3=row[2]
+    data4=row[3]
+    print("%5s  %15s  %d  %d"%(data1,data2,data3,data4))
 
-while True:
-    inStr=inFp.readline()
-    if not inStr:
-        break
-    outStr=""
-    for i in range(0,len(inStr)):
-        ch=inStr[i]
-        chNum=ord(ch)
-        chNum=chNum+secu
-        ch2=chr(chNum)
-        ch2=chr(chNum)
-        outStr=outStr+ch2
-    outFp.write(outStr)
-
-outFp.close()
-inFp.close()
-print(' %s --> %s 변환 완료'%(inFname,outFname))
+con.close()
